@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mailing List</title>
+        <style>
+            form{
+                background-color: rgb(196, 83, 83);
+            }
+            form ol{
+                list-style-type: none;
+                padding: 1em;
+            }
+            form li{
+                border: none;
+                padding: 1em;
+            }
+
+            form input{
+                border-radius: 2px;
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Mailing list Sign up</h1>
+        <form action="/mailings.php" method="GET">
+            <fieldset>
+                <legend>Join our email list</legend>
+                <p>Get news sent to your mailbox by signing up</p>
+                <ol>
+                    <li>
+                        <label for="firstlast">Name:</label>
+                        <input type="text" name="fullname" id="firstlast">
+                    </li>
+                    <li>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email">
+                    </li>
+                    <li>
+                        <label>Favorite color:
+                            <input type="text" name="favcolor" value="Red" maxlength="50">
+                        </label>
+                    </li>
+                </ol>
+                <input type="submit" value="Submit">
+            </fieldset>
+
+        </form>
+    </body>
+</html>
